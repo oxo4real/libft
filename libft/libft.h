@@ -1,5 +1,5 @@
-#ifndef libft_h
-# define libft_h
+#ifndef LIBFT_H
+# define LIBFT_H
 
 # include <stdlib.h>
 # include <unistd.h>
