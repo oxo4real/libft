@@ -11,7 +11,7 @@ RM := rm -f
 all: $(NAME)
 
 $(NAME): $(OBJS)
-	$(LIBC) $(NAME) $(OBJS)
+	$(LIBC) $(NAME) $?
 
 bonus: $(NAME) $(OBJSB)
 	$(LIBC) $(NAME) $(OBJSB)
