@@ -29,7 +29,7 @@ static char	*ft_strcpy(char *dest, const char *src)
 char	*ft_strdup(const char *s)
 {
 	char	*dup;
-	
+
 	dup = malloc(sizeof(char) * ft_strlen(s) + 1);
 	if (dup == NULL)
 		return (NULL);

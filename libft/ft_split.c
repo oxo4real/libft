@@ -26,7 +26,7 @@ static char	*ft_strcpy_v2(char *dest, char const *src, char c)
 	return (dest);
 }
 
-static int	c_count(int pos, char const *str, char c)
+static int	c_cnt(int pos, char const *str, char c)
 {
 	int	len;
 
@@ -66,7 +66,7 @@ static char	**fill_arr(char **arr, char const *str, char c)
 		else if (!is_word)
 		{
 			is_word = 1;
-			arr[count] = (char *)malloc(sizeof(char) * (c_count(i, str, c) + 1));
+			arr[count] = (char *)malloc(sizeof(char) * (c_cnt(i, str, c) + 1));
 			if (!arr[count])
 			{
 				ft_free_all(arr, count);
@@ -103,7 +103,7 @@ char	**ft_split(char const *s, char c)
 	arr = (char **)malloc(sizeof(char **) * (count + 1));
 	if (!arr)
 		return (NULL);
-	if(!fill_arr(arr, s, c))
+	if (!fill_arr(arr, s, c))
 		return (NULL);
 	return (arr);
 }

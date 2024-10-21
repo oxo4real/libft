@@ -16,7 +16,7 @@ static void	ft_putnbr_buff(int n, char *buff, int size, int pos)
 {
 	char			c;
 	unsigned int	nb;
-	
+
 	nb = (unsigned int) n;
 	if (n < 0)
 	{
