@@ -25,7 +25,7 @@ $(OBJ_DIR):
 $(NAME): $(OBJS)
 	$(LIBC) $(NAME) $?
 
-$(OBJ_DIR)%.o: %.c
+$(OBJ_DIR)%.o: %.c libft.h
 	$(CC) -c $(CFLAGS) -o $@ $<
 
 bonus: all $(.BONUS)

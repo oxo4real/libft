@@ -37,13 +37,7 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	if (s)
 	{
 		if (start >= ft_strlen(s))
-		{
-			rendu = (char *)malloc(1);
-			if (!rendu)
-				return (NULL);
-			rendu[0] = 0;
-			return (rendu);
-		}
+			return (NULL);
 		if (ft_strlen(s) - start < len)
 			len = ft_strlen(s) - start;
 		rendu = (char *)malloc(len + 1);
