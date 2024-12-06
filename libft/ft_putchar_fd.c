@@ -14,7 +14,7 @@
 
 void	ft_putchar_fd(char c, int fd)
 {
-	unsigned char uc;
+	unsigned char	uc;
 
 	uc = (unsigned char)c;
 	if (fd >= 0)
