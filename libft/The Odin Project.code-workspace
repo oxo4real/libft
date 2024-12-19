@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "../../../../The Odin Project"
+		},
+		{
+			"path": "../../.."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "The Odin Project"
+	}
+}
